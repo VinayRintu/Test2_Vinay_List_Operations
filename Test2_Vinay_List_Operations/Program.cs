@@ -18,33 +18,43 @@ do
     {
         case 1:
             AddEmployee();
+            Console.WriteLine("------------------");
             break;
         case 2:
             RemoveEmployee();
+            Console.WriteLine("------------------");
             break;
         case 3:
             InsertRecordByIndex();
+            Console.WriteLine("------------------");
             break;
         case 4:
             RemoveEmployeeByIndex();
+            Console.WriteLine("------------------");
             break;
         case 5:
             ShowAllEmployeeRecords();
+            Console.WriteLine("------------------");
             break;
         case 6:
             SearchEmployee();
+            Console.WriteLine("------------------");
             break;
         case 7:
             RecordCount();
+            Console.WriteLine("------------------");
             break;
         case 8:
             ClearList();
+            Console.WriteLine("------------------");
             break;
         case 9:
             ClearConsole();
+            Console.WriteLine("------------------");
             break;
         case 10:
            choice=false;
+            Console.WriteLine("------------------");
             break;
 
     }
@@ -67,7 +77,7 @@ void AddEmployee()
     }
     if (RecordStatus)
     {
-        Console.WriteLine("*****Employee Recors Inserted Successfully******");
+        Console.WriteLine("*****Employee Records Inserted Successfully******");
     }
 }
 void RemoveEmployee()
@@ -111,7 +121,7 @@ void RemoveEmployeeByIndex()
 
     bool isRemoveVariableFoud = false;
     foreach (Employee employee in employeeList)
-    {       
+    {        
             employeeList.RemoveAt(indexVariable);
             isRemoveVariableFoud = true;
         break;
