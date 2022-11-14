@@ -111,12 +111,10 @@ void RemoveEmployeeByIndex()
 
     bool isRemoveVariableFoud = false;
     foreach (Employee employee in employeeList)
-    {
-        if (indexVariable == employee.EmployeeId)
-        {
+    {       
             employeeList.RemoveAt(indexVariable);
             isRemoveVariableFoud = true;
-        }
+        break;
     }
     if (isRemoveVariableFoud)
     {
