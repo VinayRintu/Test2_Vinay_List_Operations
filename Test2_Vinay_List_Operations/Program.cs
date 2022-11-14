@@ -7,11 +7,20 @@ Console.WriteLine("Hello, World!");
 List<Employee> employeeList = new List<Employee>();
 Employee objectEmployee = new Employee();
 
-
 bool choice =true;
 do
 {
-    Console.WriteLine("Select One Option\n1.  Add Employee\n2.  Remove Employee\n3.  Insert Employee By Index\n4.  Remove Employee By Index\n5.  Display All Records\n6.  Search Employee\n7.  Total Records Count\n8.  Clear The List\n9.  Clear Console\n10.  Stop The Program");
+    Console.WriteLine("Select One Option\n" +
+        "1.  Add Employee\n" +
+        "2.  Remove Employee\n" +
+        "3.  Insert Employee By Index\n" +
+        "4.  Remove Employee By Index\n" +
+        "5.  Display All Records\n" +
+        "6.  Search Employee\n" +
+        "7.  Total Records Count\n" +
+        "8.  Clear The List\n" +
+        "9.  Clear Console\n" +
+        "10.  Stop The Program");
     int selectedOption=int.Parse(Console.ReadLine());
 
     switch (selectedOption)
@@ -71,6 +80,7 @@ void AddEmployee()
     bool RecordStatus = false;
     for (int loopVariable = 1; loopVariable <= noOfEmployees; loopVariable++)
     {
+        Employee objectEmployee =new Employee();
         objectEmployee.AddEmployees();
         employeeList.Add(objectEmployee);
         RecordStatus = true;
